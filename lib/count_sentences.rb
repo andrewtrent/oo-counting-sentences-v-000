@@ -19,7 +19,6 @@ class String
     self.split("." || "!" || "?").each do |unit|
       unit << els if unit.include?(/a-zA-Z/)
     end
-    binding.pry
     els.length
   end
 end
