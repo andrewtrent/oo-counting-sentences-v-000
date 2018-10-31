@@ -19,6 +19,7 @@ class String
     self.split(/.!?/).each do |unit|
       els << unit if unit.include?(/a-zA-Z/)
     end
+    binding.pry
     els.length
   end
 end
