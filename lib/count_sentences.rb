@@ -17,5 +17,6 @@ class String
   def count_sentences
     els = []
     els << self.split(/.!?/) if els.include?(/a-zA-Z/)
+    els.count
   end
 end
