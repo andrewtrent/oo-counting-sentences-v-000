@@ -17,7 +17,7 @@ class String
   def count_sentences
     els = []
     self.split("." || "!" || "?").each do |unit|
-      unit << els if unit.include?(/a-zA-Z/)
+    else << unit if unit.include?(/a-zA-Z/)
     end
     els.length
   end
