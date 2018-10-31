@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     els = []
-    self.split(/(.)(!)(?)/).each do |unit|
+    self.split(/[.?!]/).each do |unit|
     els << unit
     end
     els.length
