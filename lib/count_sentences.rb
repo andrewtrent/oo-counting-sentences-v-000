@@ -19,6 +19,6 @@ class String
     self.split(/.!?/).each do |unit|
       els << unit if unit.include?(/a-zA-Z/)
     end
-    els.count
+    els.length
   end
 end
